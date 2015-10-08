@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OuluWeather</string>
+    <string name="settings_name">OuluWeather Settings</string>
+    <string name="temperature">-0.0</string>
+    <string name="temp_unit">°C</string>
+    <string name="wind_speed">Wind: </string>
+    <string name="wind_value">0.0m/s </string>
+    <string name="wind_direction">➜</string>
+    <string name="winddir">0</string>
+    <string name="rain">Rain: </string>
+    <string name="precipitation">0</string>
+    <string name="update_int">Update interval: </string>
+    <string name="units">Imperial units: </string>
+    <string name="save">Save</string>
+
+    <string-array name="intervals">
+        <item>5 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+    </string-array>
+    
+</resources>

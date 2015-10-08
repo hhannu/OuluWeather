@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/weatherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="vertical"
+            android:padding="0dp" >
+            
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal"
+		            android:padding="0dp" >
+			        
+			        <TextView
+			            android:id="@+id/tempView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="fill_vertical|fill_horizontal|center"
+			            android:clickable="true"
+			            android:shadowColor="#000000"
+			            android:shadowDx="0"
+			            android:shadowDy="0"
+			            android:shadowRadius="4"
+			            android:text="@string/temperature"
+			            android:textAppearance="?android:attr/textAppearanceLarge"
+			            android:textSize="50sp"
+			            android:textStyle="bold" />
+			        
+			        <TextView
+			            android:id="@+id/tempUnit"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:paddingRight="10dp"
+			            android:shadowColor="#000000"
+			            android:shadowDx="0"
+			            android:shadowDy="0"
+			            android:shadowRadius="4"
+			            android:text="@string/temp_unit"
+			            android:textAppearance="?android:attr/textAppearanceLarge"
+			            android:textSize="42sp" />
+		        
+				</LinearLayout>
+							        
+				<TextView
+				    android:id="@+id/windchillView"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="top"
+    		    	android:layout_marginTop="-18dp"
+    		    	android:layout_marginLeft="28dp"
+				    android:clickable="true"
+				    android:shadowColor="#000000"
+				    android:shadowDx="0"
+				    android:shadowDy="0"
+				    android:shadowRadius="4"
+				    android:text=""
+				    android:textStyle="bold" />
+				
+		</LinearLayout>
+		
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical"
+	        android:orientation="vertical"
+            android:padding="0dp" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="fill_vertical" >
+
+	            <TextView
+	                android:id="@+id/WindspeedValue"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:shadowColor="#000000"
+	                android:shadowDx="0"
+	                android:shadowDy="0"
+	                android:shadowRadius="4"
+	                android:text="@string/wind_value"
+	                android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+	            <TextView
+	                android:id="@+id/WinddirValue"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:shadowColor="#000000"
+	                android:shadowDx="0"
+	                android:shadowDy="0"
+	                android:shadowRadius="4"
+	                android:text="@string/wind_direction"
+            		android:textStyle="bold"  
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	        </LinearLayout>
+
+	        <TextView
+	            android:id="@+id/PrecipitationValue"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:shadowColor="#000000"
+	            android:shadowDx="0"
+	            android:shadowDy="0"
+	            android:shadowRadius="4"
+	            android:text="@string/precipitation"
+	            android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+	    </LinearLayout>
+
+    </LinearLayout>
+    
+    		<TextView
+    		    android:id="@+id/timeView"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_gravity="top|center_horizontal"
+    		    android:layout_marginTop="-10dp"
+    		    android:shadowColor="#000000"
+    		    android:shadowDx="0"
+    		    android:shadowDy="0"
+    		    android:shadowRadius="4"
+    		    android:text="00:00:00"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="12sp" />
+    
+</LinearLayout>
